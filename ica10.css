@@ -1,1 +1,135 @@
 /* EDIT THESE STYLES FOR YOUR TASKS */
+nav .logo{
+display: flex;
+   max-width: 10px;
+   max-height: 10px;
+   align-items: center;
+}
+nav .logo :hover{
+    display: flex;
+    transform:scale(1.1) rotate(10deg);
+    }
+
+.box-2 { 
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;   
+}
+.box2content{
+    background-image: linear-gradient(pink, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 5px;
+    transition: 1000ms ease;
+}
+.box2content:hover{
+    background-size: 100% 3px;
+}
+
+#grid-wrapper .center-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.box-4{
+    
+    text-align: center;
+    font-size: xx-large;
+    transition: background-color 2s ease;
+    animation: colors 10s infinite;
+}
+.box-5{
+
+    text-align: center;
+    font-size: xx-large;
+    transition: background-color 2s ease;
+    animation: colors 10s infinite 1s;
+}
+.box-6{
+    
+    text-align: center;
+    font-size: xx-large;
+    transition: background-color 2s ease;
+    animation: colors 10s infinite 2s;
+}
+@keyframes colors{
+    0%{
+        background-color: pink;
+    }
+    30%{
+        background-color: black;
+    }
+    31%{
+        background-color: pink;
+    }
+    60%{
+        background-color: black;
+    }
+    61%{
+        background-color: pink;
+    }
+    100%{
+        background-color: black;
+    }
+}
+aside{
+    position: fixed;
+    bottom: -10px;
+    left: -10px;
+    transition: all .3s ease;
+    visibility: hidden;
+    font-weight: bold;
+    font-size: xx-large;
+    background-color: rgb(183, 155, 209);
+    color: white;
+    animation: notification 5s ease-in-out infinite;
+}
+@keyframes notification{
+    0%{
+        bottom: -50px;
+        left: -50px;
+        visibility: hidden;
+    }
+    50%{
+        bottom: 20px;
+        left: 20px;
+        visibility: visible;
+    }
+    100%{
+        bottom: -50px;
+        left: -50px;
+        visibility: hidden;
+    }
+}
+.box-3{
+    background-image:  linear-gradient(45deg, pink, blue);
+    transition: background-image 0.3s ease;
+}
+.box-3:hover{
+    animation: gradient 5s infinite;
+    background-image: linear-gradient(45deg, pink, blue);
+}
+@keyframes gradient{
+    0%{
+        filter:hue-rotate(0deg);
+     
+     }
+     100%{
+        filter:hue-rotate(360deg);
+     
+     }
+}
+#text {
+    animation: rotate 20s linear infinite;
+    transform-origin: center center;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
